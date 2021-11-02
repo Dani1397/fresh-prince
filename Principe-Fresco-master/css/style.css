@@ -1,0 +1,93 @@
+:root {
+    --main-ligth-orange: #FF906D;
+    --main-orange: #FF4C13;
+    --main-blue-color: #4276FB;
+    --main-white: #FFFFFF;
+    --main-black-color: #1D1D1D;
+}
+body{
+    background-color: #FF906D;
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+#navbar {
+  background-color: var(--main-white);
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  left: 0px;
+  width: 100%;
+  z-index: 10;
+  position: static;
+}
+
+#row {
+  list-style: none;
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.nav-list {
+  line-height: 3;
+  text-decoration: none;
+  color: var(--main-black-color);
+}
+ 
+.nav-list:hover{
+  color: var(--main-black-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#icons {
+  display: flex;
+  cursor: pointer;
+  margin-top: 20px;
+  max-width: 1rem;
+  max-height: 2rem;
+}
+
+#shopping img{
+  padding-right: 10px;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none inside;
+}
+ul.slider {
+  position:relative; 
+}
+
+ul.slider li {
+  opacity: 0;
+  transition: opacity .5s;
+  position: absolute;
+  left: 12rem;
+  top: 0px;
+  margin: 50px;
+  padding: 176px;
+  border: 2px solid red;
+  background: #fff;
+}
+ul.slider li:first-child {
+  opacity: 1; 
+}
+ul.slider li:target {
+  opacity: 1; 
+}
+nav {
+  position:relative;
+  top:200px;
+  left:50px;
+}
+
+.imagenes{
+display: flex;
+}
+
+
